@@ -1,29 +1,33 @@
 // import React from 'react'
-// import "./LeftSidebar.css";
-// import { NavLink } from "react-router-dom";
-// import Globe from "../../assets/Globe.svg";
+// import './LeftSidebar.css'
+// import { NavLink } from 'react-router-dom';
+// import Globe from '../../assets/Globe.svg'
 // const LeftSidebar = () => {
 //   return (
 //     <div className='left-sidebar'>
 //       <nav className='side-nav'>
-
-//         <NavLink to='/' className={'side-nav-bar'} activeClass='active' >
+//         <NavLink to='/' className='side-nav-links' activeClassName='active'>
 //           <p>Home</p>
 //         </NavLink>
 //         <div className='side-nav-div'>
-//           <div><p>PUBLIC</p></div>
-//           <NavLink to='/Questions' className='side-nav-links'>
-//             <img src={Globe} alt='Globe'/>
-//             <p style={{paddingLeft:"10px"}}>Questions</p>
-//           </NavLink>
-//           <NavLink to='/Tags' className='side-nav-links' style={{paddingLeft:"40px"}}>
-//             <p>Tags</p>
-//           </NavLink>
+//           <div>
+//             <p>PUBLIC</p>
+//             <NavLink to='Questons' className='side-nav-links' activeClassName='active' style={{paddingLeft:"00px"}}>
+//               <img src={Globe} alt="Globe"/>
+//               <p style={{paddingLeft:"10px"}}>Questions</p>
+//             </NavLink>
 
-//           <NavLink to='/Tags' className='side-nav-links' style={{paddingLeft:"40px"}}>
-//             <p>Users</p>
-//           </NavLink>
+//             <NavLink to='/Tags' className='side-nav-links' activeClassName='active' style={{paddingLeft:"40px"}}>
+//               <p>Tags</p>
+
+//             </NavLink>
+//             <NavLink to='/Users' className='side-nav-links' activeClassName='active' style={{paddingLeft:"40px"}}>
+//               <p>Users</p>
+
+//             </NavLink>
+//           </div>
 //         </div>
+
 //       </nav>
       
 //     </div>
@@ -34,36 +38,34 @@
 
 
 
-import React from 'react';
-import './LeftSidebar.css';
-import { NavLink } from 'react-router-dom';
-import Globe from '../../assets/Globe.svg';
+import React from 'react'
+import './LeftSidebar.css'
+import { NavLink } from 'react-router-dom'
+import Globe from  '../../assets/Globe.svg'
 
 const LeftSidebar = () => {
-  return (
-    <div className="left-sidebar">
-      <nav className="side-nav">
-        <NavLink exact to="/" className="side-nav-bar" activeClassName="active">
-          <p>Home</p>
-        </NavLink>
-        <div className="side-nav-div">
-          <div>
-            <p>PUBLIC</p>
-          </div>
-          <NavLink to="/Questions" className="side-nav-links">
-            <img src={Globe} alt="Globe" />
-            <p style={{ paddingLeft: '10px' }}>Questions</p>
-          </NavLink>
-          <NavLink to="/Tags" className="side-nav-links" style={{ paddingLeft: '40px' }}>
-            <p>Tags</p>
-          </NavLink>
-          <NavLink to="/Users" className="side-nav-links" style={{ paddingLeft: '40px' }}>
-            <p>Users</p>
-          </NavLink>
+    return (
+        <div className='left-sidebar'>
+            <nav className='side-nav'>
+                <NavLink to='/' className='side-nav-links' activeclassname='active'>
+                    <p>Home</p>
+                </NavLink>
+                <div className='side-nav-div'>
+                    <div><p>PUBLIC</p></div>
+                    <NavLink to='/Questions' className='side-nav-links' activeclassname='active'>
+                        <img src={Globe} alt="Globe" />
+                        <p style={{paddingLeft: "10px"}}> Questions </p>
+                    </NavLink>
+                    <NavLink to='/Tags' className='side-nav-links' activeclassname='active' style={{paddingLeft: "40px"}}>
+                        <p>Tags</p>
+                    </NavLink>
+                    <NavLink to='/Users' className='side-nav-links' activeclassname='active' style={{paddingLeft: "40px"}}>
+                        <p>Users</p>
+                    </NavLink>
+                </div>
+            </nav>
         </div>
-      </nav>
-    </div>
-  );
-};
+    )
+}
 
-export default LeftSidebar;
+export default LeftSidebar
